@@ -1,0 +1,107 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(180deg, #010101 0%, #281864 100%);
+    height: 3500px;
+}
+.body {
+    padding: 0px;
+    margin: 0px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.header-img {
+    display: flex;
+    width: 100%;
+}
+.name-site {
+    display: block;
+    position: absolute;
+    top: 600px;
+    left: 250px;
+    font-family: Good Timing;
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+.podpiska-text {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 40px;
+    text-align: center;
+    color: #fff; 
+    align-items: center;
+}
+.text {
+    padding: 0px;
+    margin: 6px 0px;
+}
+.img-left {
+    display: block;
+    position: absolute;
+    top: 900px;
+}
+.svg-text {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+.container-bloc-subscribtion {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    color: #fff;
+    justify-content: space-between;
+    padding: 20px 60px 20px 60px;
+}
+.bloc-subscribtion {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 393px;
+    height: 630px;
+    background-color: #4830A1;
+    z-index: 1;
+    border-radius: 12px;
+    padding: 20px;
+}
+.deluxe-text {
+    background-color: #FED448;
+    border-radius: 12px;
+    padding: 12px 6px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 43px;
+    color: #271964;
+}
+.extra-text {
+    background-color: #D1D1D1;
+    border-radius: 12px;
+    padding: 12px 6px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 43px;
+    color: #271964;
+}
+.essential-text {
+    background-color: #BAABFA;
+    border-radius: 12px;
+    padding: 12px 6px;
+    font-family: var(--font-family);
+    font-weight: 900;
+    font-size: 43px;
+    color: #271964;
+}
+.text-description {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 20px;
+    color: #271964;
+}
