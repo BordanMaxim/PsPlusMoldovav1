@@ -42,11 +42,12 @@ body {
 .text {
     padding: 0px;
     margin: 6px 0px;
+    font-size: 20px;
 }
 .img-left {
     display: block;
     position: absolute;
-    top: 900px;
+    top: 780px;
 }
 .svg-text {
     display: flex;
