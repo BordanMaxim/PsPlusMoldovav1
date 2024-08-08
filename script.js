@@ -16,9 +16,24 @@ document.getElementById('contact-form').addEventListener('submit', function(even
     })
     .then(function(response) {
         console.log('SUCCESS!', response.status, response.text);
-        alert('Message sent successfully!');
+        alert('Ваше сообщение отправлено, мы скоро с вами свяжемся!');
     }, function(error) {
         console.log('FAILED...', error);
-        alert('Failed to send message.');
+        alert('Упс! Что-то пошло не так, попробуйте еще раз.');
     });
 });
+
+
+const phoneInput = document.getElementById('phone');
+
+        phoneInput.addEventListener('input', (event) => {
+            const input = event.target;
+            const inputValue = input.value;
+
+            if (!inputValue.startsWith("+373 ")) {
+                input.value = "+373 ";
+            }
+
+            // Remove any non-digit characters (except for the initial "+373 ")
+            input.value = "+373 " + inputValue.slice(5).replace(/\D/g, '').slice(0, 8);
+        });
