@@ -24,6 +24,42 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const items = document.querySelectorAll('.carousel-item');
+    const prevButton = document.querySelector('.carousel-control.prev');
+    const nextButton = document.querySelector('.carousel-control.next');
+    let currentIndex = 1; // Начальная активная позиция
+
+    function updateCarousel() {
+        items.forEach((item, index) => {
+            item.classList.remove('active');
+            item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
+        });
+        items[currentIndex].classList.add('active');
+    }
+
+    function showPrev(event) {
+        event.preventDefault();
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
+        updateCarousel();
+    }
+
+    function showNext(event) {
+        event.preventDefault();
+        currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
+        updateCarousel();
+    }
+
+    prevButton.addEventListener('click', showPrev);
+    nextButton.addEventListener('click', showNext);
+
+    updateCarousel(); // Начальная настройка
+});
+
+
+
+
+
 const phoneInput = document.getElementById('phone');
 
         phoneInput.addEventListener('input', (event) => {
