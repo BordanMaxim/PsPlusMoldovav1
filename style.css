@@ -30,17 +30,30 @@ body {
     display: flex;
     width: 100%;
 }
-.name-site {
+/* .name-site {
     display: block;
     position: absolute;
     top: 600px;
-    left: 250px;
+    left:5vh;
     font-family: Good Timing;
     font-weight: 700;
     font-size: 100px;
     text-transform: uppercase;
     color: #fff;
     text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+} */
+.name-site {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Good Timing', sans-serif; /* Добавил паддинг в название шрифта */
+    font-weight: 700;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    text-align: center;
 }
 .podpiska-text {
     display: flex;
