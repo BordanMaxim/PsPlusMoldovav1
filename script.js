@@ -24,40 +24,30 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 });
 
 
-document.addEventListener('DOMContentLoaded', function() {
-    const items = document.querySelectorAll('.carousel-item');
-    const prevButton = document.querySelector('.carousel-control.prev');
-    const nextButton = document.querySelector('.carousel-control.next');
-    let currentIndex = 1; // Начальная активная позиция
+let currentSlide = 0;
+const slides = document.querySelectorAll('.gallery img');
 
-    function updateCarousel() {
-        items.forEach((item, index) => {
-            item.classList.remove('active');
-            item.style.transform = `translateX(${(index - currentIndex) * 100}%)`;
-        });
-        items[currentIndex].classList.add('active');
-    }
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.classList.remove('active');
+        if (i === index) {
+            slide.classList.add('active');
+        }
+    });
+}
 
-    function showPrev(event) {
-        event.preventDefault();
-        currentIndex = (currentIndex > 0) ? currentIndex - 1 : items.length - 1;
-        updateCarousel();
-    }
+function prevSlide() {
+    currentSlide = (currentSlide > 0) ? currentSlide - 1 : slides.length - 1;
+    showSlide(currentSlide);
+}
 
-    function showNext(event) {
-        event.preventDefault();
-        currentIndex = (currentIndex < items.length - 1) ? currentIndex + 1 : 0;
-        updateCarousel();
-    }
+function nextSlide() {
+    currentSlide = (currentSlide < slides.length - 1) ? currentSlide + 1 : 0;
+    showSlide(currentSlide);
+}
 
-    prevButton.addEventListener('click', showPrev);
-    nextButton.addEventListener('click', showNext);
-
-    updateCarousel(); // Начальная настройка
-});
-
-
-
+// Показать первый слайд
+showSlide(currentSlide);
 
 
 const phoneInput = document.getElementById('phone');

@@ -9,7 +9,7 @@
     <meta name="keywords" content="PS Plus Moldova, PlayStation, игры, новости, обзоры, эксклюзивы, консольные игры">
     <meta name="author" content="PS Plus Moldova">
     <title>Ps Plus Moldova</title>
-    <link rel="icon" href="img/horizon.png" type="image/x-icon">
+    <link rel="icon" href="img/horizon1.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     </link>
 </head>
@@ -20,10 +20,14 @@
             <img src="img/header-img.png" class="header-img" alt="">
             <div class="name-site">Ps Plus Moldova</div>
             <div class="podpiska-text">
-                <p class="text">Оформим подписку PS Plus: Essential, Extra, Deluxe. </p>
-                <p class="text">Лучшие цены в Молдове.</p>
-                <p class="text">Купим игры, зарегистрируем аккаунт. </p>
-                <p class="text">В регионе Украина и Турция.</p>
+                <div class="text-info">Оформим подписку PS Plus: Essential, Extra, Deluxe.
+                    <br>
+                    Оформим подписку PS Plus: Essential, Extra,
+                    <br>
+                    Deluxe.Купим игры, зарегистрируем аккаунт.
+                    <br>
+                    В регионе Украина и Турция.
+                </div>
             </div>
 
 
@@ -200,69 +204,80 @@
                         <div class="text"> &#10003;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Share Play</div>
                         <div class="text"> &#10003;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Коллекция PlayStation
                             Plus*</div>
+
                     </div>
                 </div>
             </div>
 
         </div>
     </div>
-
-    <div class="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item">
-                <img src="img/facebook.png" alt="Image 1">
-            </div>
-            <div class="carousel-item active">
-                <img src="img/telegram.png" alt="Image 2">
-            </div>
-            <div class="carousel-item">
-                <img src="img/whatsapp.png" alt="Image 3">
-            </div>
+    <div class="text-game-first">Горячие скидки!</div>
+    <div class="gallery-container-first">
+        <div class="text-game">
+            Ознакомтесь с найлушеми скидками на игры.
+           <br> Каждые две недели вас ждут новые игры по самым выгодным ценам.
+           <br>
         </div>
-        <a class="carousel-control prev" href="#">&#10094;</a>
-        <a class="carousel-control next" href="#">&#10095;</a>
+    <div class="gallery-container">
+        <div class="gallery">
+            <img src="img/image1.jpg" alt="Фото 1" class="active">
+            <img src="img/image2.jpg" alt="Фото 2">
+            <img src="img/image3.jpg" alt="Фото 3">
+            <img src="img/image4.jpg" alt="Фото 4">
+        </div>
+        <button id="butoon" class="prev" onclick="prevSlide()">&#10094;</button>
+        <button id="butoon" class="next" onclick="nextSlide()">&#10095;</button>
     </div>
+    </div>
+
+
+    <div class="text-comand">Для быстрого оформления заказа, заполните форму
+        или нажмите на иконку для перехода в месенджер.</div>
     <div class="container-contact-us">
         <div class="contact">
-            <h1>Для быстрого оформленя заказа, свяжитесь с нами!</h1>
             <form id="contact-form">
                 <label for="name">Ваше Имя:</label>
-                <input type="text" id="name" name="name" required><br><br>
+                <input type="text" id="name" name="name" required><br>
                 <!-- <label for="email">Ваш Email:</label>
         <input type="email" id="email" name="email" required><br><br> -->
                 <label for="phone">Ваш номер:</label>
-                <input type="tel" id="phone" name="phone" value="+373 " required><br><br>
+                <input type="tel" id="phone" name="phone" value="+373 " required><br>
                 <label for="message">Сообшение:</label>
-                <textarea id="message" name="message" required></textarea><br><br>
+                <textarea id="message" name="message" required></textarea><br>
                 <button type="submit">Отправить</button>
             </form>
-        </div>
-        <div class="container-logo-icons">
-            <div class="social-icons">
-                <div class="icon">
-                    <a href="viber://chat?number=%2B37360887261" target="_blank">
-                        <img src="img/viber.png" alt="Viber">
-                    </a>
-                </div>
-                <div class="icon">
-
-                    <a href="tg://resolve?domain=DmitryPSN" target="_blank">
-                        <img src="img/telegram.png" alt="Telegram">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="https://wa.me/37360887261" target="_blank">
-                        <img src="img/whatsapp.png" alt="WhatsApp">
-                    </a>
-                </div>
-                <div class="icon">
-                    <a href="https://www.facebook.com/dkaraban1" target="_blank">
-                        <img src="img/facebook.png" alt="facebook">
-                    </a>
+            <div class="container-logo-icons">
+                <div class="social-icons">
+                    <div class="icon">
+                        <a href="tg://resolve?domain=DmitryPSN" target="_blank">
+                            <img src="img/telegram.png" alt="Telegram">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="viber://chat?number=%2B37360887261" target="_blank">
+                            <img src="img/viber.png" alt="Viber">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://wa.me/37360887261" target="_blank">
+                            <img src="img/whatsapp.png" alt="WhatsApp">
+                        </a>
+                    </div>
+                    <div class="icon">
+                        <a href="https://www.facebook.com/dkaraban1" target="_blank">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
+    <div class="botom-text-1">Работаем круглосуточно без выходных.</div>
+
+        <div class="botom-text-2">Оставлять заявку и писать на Viber, WhatsApp, Facebook или Telegram
+        можно в любое время. Проконсультируем по всем вопросам.</div>
+    
 
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">

@@ -1,8 +1,20 @@
+@font-face {
+    font-family: 'Good Timing';
+    src: url('fonts/good timing bd.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Montserrat Alternates';
+    src: url('fonts/MontserratAlternates-Black.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     padding: 0px;
     margin: 0px;
     background: linear-gradient(180deg, #010101 0%, #281864 100%);
-    height: 4000px;
+    height: fit-content;
 }
 .body {
     padding: 0px;
@@ -42,7 +54,24 @@ body {
 .text {
     padding: 0px;
     margin: 6px 0px;
-    font-size: 20px;
+    font-size: 18px;
+}
+.text-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 24px;
+    padding-bottom: 80px;
+}
+.text-game {
+    text-align: center;
+    
+}
+.text-game-first {
+    color: gold;
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .img-left {
     display: block;
@@ -136,17 +165,20 @@ body {
 }
 .contact {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
+    gap: 30px;
 }
 #contact-form {
+    display: flex;
+    flex-direction: column;
     background-color: #4830A1;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 300px;
+    width: 400px;
 }
 #contact-form label {
     display: block;
@@ -177,18 +209,14 @@ body {
     background-color: #45a049;
 }
 .container-logo-icons {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
 }
 
 .social-icons {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    gap: 50px;
+    padding: 16px;
 }
 
 .icon {
@@ -217,61 +245,94 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 100%;
 }
-.carousel {
-    position: relative;
-    width: 80%;
-    max-width: 600px;
-    overflow: hidden;
-}
 
-.carousel-inner {
-    display: flex;
-    transition: transform 0.5s ease;
-}
-
-.carousel-item {
-    flex: 1;
-    opacity: 0.5;
-    transform: scale(0.8);
-    transition: transform 0.5s ease, opacity 0.5s ease;
-}
-
-.carousel-item.active {
-    transform: scale(1);
-    opacity: 1;
-}
-
-.carousel-item img {
-    width: 100%;
-    display: block;
-}
-
-.carousel-control {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    color: #333;
-    text-decoration: none;
-    padding: 0 10px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.carousel-control.prev {
-    left: 10px;
-}
-
-.carousel-control.next {
-    right: 10px;
-}
-
-.carousel-control:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-}
-  .container-contact-us {
+.container-contact-us {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    padding-left: 80px;
+    background-image: url("img/wolf.png");
+    background-repeat: no-repeat;
+}
+
+  .text-comand {
+    color: white;
+    font-size: 44px;
+    text-align: center;
+    padding: 0px 50px;
   }
+  .info-contact {
+    text-align: center;
+    font-size: 22px;
+    color: white;
+  }
+
+.gallery-container-first {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    flex-direction: row;
+    color: white;
+    font-size: 40px;
+}
+/* Общие стили */
+.gallery-container {
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    right: 0px;
+    border: 5px solid white;
+    border-radius: 12px;
+}
+
+.gallery img {
+    width: 100%;
+    display: none;
+}
+
+.gallery img.active {
+    display: block;
+}
+
+/* Стили для кнопок переключения */
+button#butoon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button#butoon:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+    left: 0;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.next {
+    right: 0;
+    border-radius: 50%;
+    background-color: white;
+}
+.botom-text-1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 25px;
+    font-family: 'Good Timing', sans-serif;
+}
+.botom-text-2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 70px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
